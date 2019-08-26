@@ -14,7 +14,7 @@ def plot_graph():
     plt.ylim(X2.min(), X2.max())
     for i, j in enumerate(np.unique(Y_set)):
         plt.scatter(X_set[Y_set == j, 0], X_set[Y_set == j , 1], c = ListedColormap(('red', 'green'))(i), label = j, linewidths = 1, edgecolor = 'black')
-    plt.title('Prediction boundary and training examples plotted (SVM )')
+    plt.title('Prediction boundary and training examples plotted')
     plt.legend()
     plt.show()
 if __name__=="__main__":
